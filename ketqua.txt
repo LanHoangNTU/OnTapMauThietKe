@@ -1,0 +1,2 @@
+Phương trình 2x2 -7x +3
+Kết quả: Nghiệm đôi x1 = 2.0 và x2 = 0.33333334
