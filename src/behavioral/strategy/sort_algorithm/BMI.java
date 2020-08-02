@@ -19,7 +19,7 @@ public class BMI implements IComparable{
     }
     
     public double getBMI(){
-        return (double)weight / (Math.pow(height, 2));
+        return ((double)weight / (Math.pow(height, 2))) * 10000;
     }
 
     @Override
@@ -33,5 +33,10 @@ public class BMI implements IComparable{
             return -1;
         else
             return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Height: " + height + ", Weight: " + weight + ", BMI: " + getBMI();
     }
 }

@@ -21,16 +21,16 @@ public class Main {
         // TODO code application logic here
         List<IComparable> comparables = new ArrayList<>();
         comparables.add(new BMI(152, 60));
-        comparables.add(new BMI(154, 60));
-        comparables.add(new BMI(155, 60));
-        comparables.add(new BMI(170, 60));
-        comparables.add(new BMI(130, 60));
-        comparables.add(new BMI(180, 60));
+        comparables.add(new BMI(154, 70));
+        comparables.add(new BMI(155, 40));
+        comparables.add(new BMI(170, 55));
+        comparables.add(new BMI(130, 90));
+        comparables.add(new BMI(180, 67));
         MyList list = new MyList(comparables);
         list.setStrategy(new MergeSort());
         list.sort();
         for (IComparable comparable : list.getComparables()) {
-            System.out.println(((BMI) comparable).getBMI());
+            System.out.println(((BMI) comparable).toString());
         }
     }
     
